@@ -1,5 +1,5 @@
 #!/bin/bash
-# replaces each 4 spaces at the beginning of lines with a tab.
+# replaces each group of 4 spaces with a tab.
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <filename.c>"
