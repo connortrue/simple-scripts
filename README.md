@@ -1,7 +1,7 @@
 # simple-scripts
 scripts I've made to make my life easier.
 
-**4spaces1tab** - replaces each 4 spaces at the beginning of each line with one tab
+**4spaces1tab** - replaces each group of 4 spaces with one tab
 Usage:
 
 
