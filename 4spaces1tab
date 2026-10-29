@@ -6,5 +6,5 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-sed -i 's/    /\t/g' "$1"
+sed -i 's/^    /\t/' "$1"
 
