@@ -1,10 +1,10 @@
 #!/bin/bash
-# replaces each 4 spaces at the beginning of lines with a tab.
+# replaces each leading group of 4 spaces with a tab.
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <filename.c>"
     exit 1
 fi
 
-sed -i 's/    /\t/g' "$1"
+sed -i ':a; s/^\(\t*\)    /\1\t/; ta' "$1"
 
